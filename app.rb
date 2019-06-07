@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
 
   post "/checkout" do
-    @hash = params
+    @item = params[:item]
 
     erb :checkout
   end
